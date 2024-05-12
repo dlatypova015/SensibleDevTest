@@ -1,0 +1,7 @@
+{
+    "/getcases": {
+        "target": "https://localhost:7231",
+        "secure": true,
+        "logLevel": "debug"
+    }
+}

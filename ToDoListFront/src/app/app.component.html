@@ -1,0 +1,37 @@
+<div class="main">
+  <h1>My To Do List</h1>
+  <h2>What would you like to do today?</h2>
+
+  <table class="cases-table">
+    <thead>
+      <tr class="cases-table-header ">
+        <th >Наименование</th>
+        <th >Дата добавления</th>
+        <th >Дата закрытия</th>
+        <th >Дедлайн</th>
+        <th >Сделано</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="cases-table-column" *ngFor="let x of casesStack">
+        <td>
+          <div placement="top" >{{ x.name }}</div>
+        </td>
+        <td >
+          <div placement="top">{{ x.createDate}} </div>
+        </td>
+        <td >
+          <div placement="top">{{ x.closeDate}}</div>
+        </td>
+        <td>
+           <div placement="top">{{ x.deadline}}</div>
+        </td>
+        <td>
+          <div placement="top">ГАЛКА</div>
+        </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <button>Добавить</button>
+</div>
